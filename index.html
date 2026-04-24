@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Simple Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            color: yellow;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        /* CONTACT */
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><strong>MyWebsite</strong></div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero" id="home">
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple website made using HTML, CSS, and JavaScript</p>
+    <button class="btn" onclick="showMessage()">Click Me</button>
+</div>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+        We are learning web development. This website is a practice project
+        to understand how HTML, CSS, and JavaScript work together.
+    </p>
+</div>
+
+<!-- SERVICES -->
+<div class="section" id="services">
+    <h2>Our Services</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>We create simple and modern website designs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Programming</h3>
+            <p>We build websites using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="card">
+            <h3>Support</h3>
+            <p>We help beginners learn coding step by step.</p>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea rows="5" placeholder="Your Message"></textarea><br>
+
+    <button class="btn" onclick="submitForm()">Send Message</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 My Simple Website | All Rights Reserved</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+    function showMessage() {
+        alert("Hello! Welcome to my website 🚀");
+    }
+
+    function submitForm() {
+        alert("Message sent successfully!");
+    }
+</script>
+
+</body>
+</html>
